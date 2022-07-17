@@ -1,0 +1,60 @@
+@import "../../Styles/styles";
+
+.l-faq {
+  &__inner {
+    padding: 70px 0;
+    width: 75%;
+    margin: auto;
+
+    &__heading {
+      font-size: 3.125rem;
+      margin-bottom: 32px;
+      text-align: center;
+    }
+
+    &__item {
+      &__q {
+        padding: 0.8em 2.2em 0.8em 1.2em;
+        background-color: $d-gray;
+        border-bottom: 1px solid #000;
+
+        &__txt {
+          font-size: 26px;
+          line-height: 1.5;
+          font-weight: 500;
+          position: relative;
+
+          &::after {
+            position: absolute;
+            content: "";
+            height: 2rem;
+            width: 2rem;
+            background: url("../../../Assets/img/icons/close.svg") no-repeat center center/cover;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+          }
+        }
+      }
+
+      &__a {
+        height: 0;
+        overflow: hidden;
+        transition: 0.3s;
+
+        &.show {
+          height: auto;
+        }
+
+        &__txt {
+          font-size: 26px;
+          line-height: 1.5;
+          font-weight: 500;
+          padding: 1.2em;
+          background-color: $d-gray;
+        }
+      }
+    }
+  }
+}

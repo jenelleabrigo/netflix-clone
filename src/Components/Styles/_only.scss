@@ -1,0 +1,11 @@
+@media screen and (min-width: 577px) {
+  .u-sp-only {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .u-pc-only {
+    display: none !important;
+  }
+}

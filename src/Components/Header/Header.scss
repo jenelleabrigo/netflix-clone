@@ -1,0 +1,14 @@
+.l-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: green;
+  padding: 2rem 3.5rem;
+  position: relative;
+  z-index: 99;
+
+  &__logo {
+    height: 36px;
+    width: auto;
+  }
+}

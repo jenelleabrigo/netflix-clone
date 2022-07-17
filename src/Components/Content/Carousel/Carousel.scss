@@ -1,0 +1,101 @@
+@import "../../Styles/styles";
+
+.l-carousel {
+  background: url("../../../Assets/img/img-hero.jpg") no-repeat center center/cover;
+  text-align: center;
+  position: relative;
+  margin-top: -100px;
+
+  &__bg {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    &::after {
+      position: absolute;
+      content: "";
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0, transparent 60%, rgba(0, 0, 0, 0.8));
+    }
+  }
+
+  &__inner {
+    padding: 255px 0 155px;
+    position: relative;
+
+    &__txt01 {
+      font-size: 50px;
+      line-height: 1.1;
+      color: #fff;
+      max-width: 640px;
+      margin: 0 auto 1rem;
+    }
+
+    &__txt02 {
+      font-size: 26px;
+      line-height: 1.1;
+      color: #fff;
+      margin-bottom: 1.85rem;
+    }
+
+    &__txt03 {
+      font-size: 20px;
+      line-height: 1.1;
+      color: #fff;
+    }
+
+    &__email {
+      height: 60px;
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &__container {
+        position: relative;
+        height: 100%;
+        width: 500px;
+
+        &__label {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 10px;
+          transition: 0.3s;
+          font-size: 16px;
+          color: $l-gray;
+        }
+
+        input[type="email"] {
+          background-color: #fff;
+          border: 1px solid $l-gray;
+          padding: 10px 10px 0;
+          font-size: 16px;
+          line-height: 1.1;
+          height: 100%;
+          width: 100%;
+          transition: 0.3s;
+
+          &:focus-visible {
+            outline: 0;
+            border: 1px solid blue;
+
+            ~ label {
+              transform: none;
+              top: 6px;
+              font-size: 13px;
+              font-weight: 700;
+              line-height: 1.2;
+            }
+          }
+        }
+      }
+    }
+  }
+}

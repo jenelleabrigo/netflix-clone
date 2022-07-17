@@ -1,0 +1,45 @@
+@import "../Styles/styles";
+
+.l-footer {
+  &__inner {
+    width: 90%;
+    margin: auto;
+    padding: 70px 45px 20px;
+
+    &__contact {
+      margin-bottom: 30px;
+      display: block;
+      font-size: 16px;
+      line-height: 1.2;
+      color: $m-gray;
+    }
+
+    &__links {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+
+      &__item {
+        width: 225px;
+        margin-bottom: 15px;
+
+        &__anchor {
+          font-size: 13px;
+          line-height: 1.2;
+          color: $m-gray;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    &__txt {
+      font-size: 13px;
+      line-height: 1.2;
+      color: $m-gray;
+      margin: 24px 0 13px;
+    }
+  }
+}
